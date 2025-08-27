@@ -1,4 +1,4 @@
-# Coffee Decorator Pattern ☕️
+# Coffee Decorator Pattern 
 
 This project demonstrates the **Decorator Pattern**, a design pattern used to add new functionality to an object without altering its structure. Think of it like a coffee shop where you can add various toppings and customizations to a basic coffee.
 
@@ -40,12 +40,12 @@ This approach allows for flexible, on-the-fly combinations of ingredients.
 
 ## Why This Is Smart
 
-- ✅ **Flexibility**: Easily add new decorators (like "Cream" or "Syrup") without modifying existing code.
-- ✅ **Mix and Match**: Any combination of decorators can be applied.
-- ✅ **Avoids Class Explosion**: You don't need to create a class for every possible combination.
-- ✅ **Reusability**: Decorator components can be reused with any base object.
+- **Flexibility**: Easily add new decorators (like "Cream" or "Syrup") without modifying existing code.
+- **Mix and Match**: Any combination of decorators can be applied.
+- **Avoids Class Explosion**: You don't need to create a class for every possible combination.
+- **Reusability**: Decorator components can be reused with any base object.
 
------
+---
 
 ## Getting Started
 
