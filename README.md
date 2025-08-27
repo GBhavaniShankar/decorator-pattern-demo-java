@@ -59,8 +59,8 @@ This approach allows for flexible, on-the-fly combinations of ingredients.
 Clone the repository:
 
 ```sh
-git clone <repository_url>
-cd coffee-decorator-pattern
+git clone git@github.com:GBhavaniShankar/decorator-pattern-demo-java.git
+cd decorator-pattern-demo-java
 ```
 
 Build the project using Maven:
