@@ -34,10 +34,6 @@ class SugarDecorator extends CoffeeDecorator {
 }
 
 ' --- Relationships ---
-ICoffee <|.. Coffee
-ICoffee <|.. CoffeeDecorator
 CoffeeDecorator *-- ICoffee
-CoffeeDecorator <|-- MilkDecorator
-CoffeeDecorator <|-- SugarDecorator
 
 @enduml
