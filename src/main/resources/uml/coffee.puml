@@ -1,0 +1,43 @@
+@startuml
+title Coffee Decorator Pattern
+
+' --- Interfaces and Components ---
+interface ICoffee {
+    +getDescription() : String
+    +getCost() : double
+}
+
+class Coffee implements ICoffee {
+    +getDescription() : String
+    +getCost() : double
+}
+
+' --- Abstract Decorator ---
+abstract class CoffeeDecorator implements ICoffee {
+    #decoratedCoffee : Coffee
+    +CoffeeDecorator(ICoffee coffee)
+    +getDescription() : String
+    +getCost() : double
+}
+
+' --- Concrete Decorators ---
+class MilkDecorator extends CoffeeDecorator {
+    +MilkDecorator(ICoffee coffee)
+    +getDescription() : String
+    +getCost() : double
+}
+
+class SugarDecorator extends CoffeeDecorator {
+    +SugarDecorator(ICoffee coffee)
+    +getDescription() : String
+    +getCost() : double
+}
+
+' --- Relationships ---
+ICoffee <|.. Coffee
+ICoffee <|.. CoffeeDecorator
+CoffeeDecorator *-- ICoffee
+CoffeeDecorator <|-- MilkDecorator
+CoffeeDecorator <|-- SugarDecorator
+
+@enduml
